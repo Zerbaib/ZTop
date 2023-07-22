@@ -1,0 +1,9 @@
+Package: ZTop
+Version: 1.0
+Section: utils
+Priority: optional
+Architecture: all
+Maintainer: Zerbaib <zerbaib@proton.me>
+#Depends: top, debhelper
+Description: Script de surveillance système ztop
+ Un script qui surveille les performances du système et enregistre les informations dans un fichier de journal.

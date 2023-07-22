@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Charger les fonctions auxiliaires
+source "lib/ztop_functions.sh"
+
+# Charger la configuration
+source "config/ztop.conf"
+
+# Vérifier les dépendances (par exemple, la commande "top")
+check_dependencies
+
+# Boucle principale de surveillance
+while true; do
+    # Obtenir les données de performance du système (par exemple, CPU, RAM, etc.)
+    data=$(get_system_performance)
+    
+    # Afficher les données dans le terminal
+    echo "$(date +'%Y-%m-%d %H:%M:%S'): $data"
+    
+    # Enregistrer les données dans le fichier de journal
+    echo "$(date +'%Y-%m-%d %H:%M:%S'): $data" >> "logs/ztop.log"
+
+    # Attendre l'intervalle de collecte défini dans la configuration
+    sleep $INTERVAL
+done

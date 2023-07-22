@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: ztop
+Upstream-Contact: Zerbaib <zerbaib@proton.me>
+Source: https://lien-vers-le-code-source-du-projet
+
+Files: *
+Copyright: (c) 2023, Hugo Hennetin <hugo.hennetin@proton.me>
+License: Licence du projet MIT
